@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "Batsman",
+    "rating": 920,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 2500000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Virat_Kohli.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "rating": 890,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 2000000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Babar_Azam_2019.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Steve Smith",
+    "country": "Australia",
+    "role": "Batsman",
+    "rating": 880,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm legbreak",
+    "price": 2200000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/2018.02.04.19.22.30-Steve_Smith_%28cropped%29.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "role": "Batsman",
+    "rating": 870,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 1800000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Kane_Williamson_2019.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Ben Stokes",
+    "country": "England",
+    "role": "All-rounder",
+    "rating": 860,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm fast-medium",
+    "price": 2400000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Ben_Stokes_%282019%29.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "rating": 850,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm legbreak googly",
+    "price": 2000000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Rashid_Khan_in_2018.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "rating": 845,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm orthodox",
+    "price": 1900000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Shakib_Al_Hasan_%28cropped%29.jpg"
+  },
+  {
+    "id": 8,
+    "name": "David Warner",
+    "country": "Australia",
+    "role": "Batsman",
+    "rating": 840,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm legbreak",
+    "price": 2300000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/David_Warner_%28cricketer%29.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "role": "Bowler",
+    "rating": 830,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 2600000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Jasprit_Bumrah_in_2018.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "role": "Wicketkeeper Batsman",
+    "rating": 820,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 1700000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Quinton_de_Kock.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Joe Root",
+    "country": "England",
+    "role": "Batsman",
+    "rating": 810,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 1750000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Joe_Root_portrait.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "role": "All-rounder",
+    "rating": 800,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 2100000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Glenn_Maxwell_2015.jpg"
+  }
+]
+ 
