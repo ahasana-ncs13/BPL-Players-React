@@ -1,7 +1,7 @@
 import React from 'react';
 import logoImg from '../../assets/logo.png'
 
-const Navbar = () => {
+const Navbar = ({availableCoin}) => {
     return (
         <div>
             <div className="navbar bg-base-100 w-11/12 mx-auto">
@@ -30,7 +30,7 @@ const Navbar = () => {
     </ul>
 
     <div className="flex justify-between">
-    <a className="btn bg-white"> <span>6000000000</span> Coin</a>
+    <a className="btn bg-white"> <span>{availableCoin}</span> Coin</a>
   </div>
 
   </div>

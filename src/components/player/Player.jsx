@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import nameImg from '../../assets/Group.png'
 import flag from '../../assets/report 1.png'
 
-const Player = ({eachPlayer}) => {
+const Player = ({eachPlayer,setAvailableCoin,availableCoin}) => {
+    let [select, setSelect]=useState(false)
     // console.log(eachPlayer)
     return (
         // card 
@@ -29,8 +30,14 @@ const Player = ({eachPlayer}) => {
             <h3 className='text-[#131313]/70'>{eachPlayer.bowlingStyle}</h3>
         </div>
         <div className="flex justify-between items-center">
-            <h3 className='font-bold'>Price:{eachPlayer.price}</h3>
-            <button className='btn bg-white'>Choose Player</button>
+            <h3 className='font-bold'>Price : $ {eachPlayer.price}</h3>
+            <button onClick={
+                ()=>{setSelect(true)
+                    availableCoin <= eachPlayer.price  ? alert('not enough balance'):
+                setAvailableCoin(availableCoin - eachPlayer.price)
+
+                }
+            } disabled={select} className='btn bg-white'>{select?"Seleted":"Choose Player"}</button>
         </div>
         </div>
     );

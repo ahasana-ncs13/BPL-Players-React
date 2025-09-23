@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { use } from 'react';
 import SelectCard from '../select/SelectCard';
 
-const Selected = ({promiseData}) => {
-    console.log(promiseData)
+const Selected = ({playersPromise}) => {
+    const SelectedpromiseData = use(playersPromise)
+    console.log(SelectedpromiseData)
     return (
         <>
         {
-        promiseData.map(selectPlayer => 
+       SelectedpromiseData.map(selectPlayer => 
                 <SelectCard key={selectPlayer.id} selectPlayer={selectPlayer}></SelectCard>
                  )
         }
 
-    <button className="btn btn-warning">Add More Player</button>
+    {/* <button className="btn btn-warning">Add More Player</button> */}
 
 </>
     );
