@@ -1,7 +1,10 @@
 import React from 'react';
 import delImg from '../../assets/Frame.png'
 
-const SelectCard = ({selectPlayer}) => {
+const SelectCard = ({selectPlayer,removePlayer}) => {
+  const handleRemove = () => {
+    removePlayer(selectPlayer)
+  }
     return (
         <div>
 <div className=" border border-gray-200 card card-side bg-base-100 shadow-sm w-11/12 mx-auto my-5 p-3">
@@ -11,7 +14,7 @@ const SelectCard = ({selectPlayer}) => {
   <div className="card-body ">
     <h2 className="card-title text-lg font-bold">{selectPlayer.name}</h2>
     <p>{selectPlayer.role}</p>
-    <div className="card-actions  justify-end">
+    <div onClick={handleRemove} className="card-actions  justify-end">
       <img src={delImg} alt="" />
     </div>
   </div>

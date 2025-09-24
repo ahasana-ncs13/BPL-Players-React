@@ -1,10 +1,27 @@
 import React, { useState } from 'react';
 import nameImg from '../../assets/Group.png'
 import flag from '../../assets/report 1.png'
+// import { toast } from 'react-toastify';
 
 const Player = ({eachPlayer,setAvailableCoin,availableCoin,purchasedPayer,setPurchedPlayer}) => {
     let [select, setSelect]=useState(false)
     // console.log(eachPlayer)
+
+    let handleSelected=(Player)=>{
+        
+                    if (availableCoin <= Player.price) {
+                        alert('not enough balance')
+                        return
+                    }
+                    if (purchasedPayer.length === 6) {
+                        alert("Already select 6 players")
+                        return;
+                    }
+                    
+                    setSelect(true)
+                setAvailableCoin(availableCoin - Player.price)
+                setPurchedPlayer([...purchasedPayer,Player])
+    }
     return (
         // card 
         <div className='p-5 border border-gray-200 rounded-2xl  '>
@@ -31,13 +48,8 @@ const Player = ({eachPlayer,setAvailableCoin,availableCoin,purchasedPayer,setPur
         </div>
         <div className="flex justify-between items-center">
             <h3 className='font-bold'>Price : $ {eachPlayer.price}</h3>
-            <button onClick={
-                ()=>{setSelect(true)
-                    availableCoin <= eachPlayer.price  ? alert('not enough balance'):
-                setAvailableCoin(availableCoin - eachPlayer.price)
-                setPurchedPlayer([...purchasedPayer, eachPlayer])
-                }
-            } disabled={select} className='btn bg-white'>{select?"Seleted":"Choose Player"}</button>
+            <button onClick={()=>handleSelected(eachPlayer)}
+            disabled={select} className='btn bg-white'>{select?"Seleted":"Choose Player"}</button>
         </div>
         </div>
     );

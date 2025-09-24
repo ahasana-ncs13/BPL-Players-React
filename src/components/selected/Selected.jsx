@@ -1,14 +1,14 @@
 import React from 'react';
 import SelectCard from '../select/SelectCard';
 
-const Selected = ({purchasedPayer}) => {
+const Selected = ({purchasedPayer,removePlayer}) => {
     // const SelectedpromiseData = use(purchasedPayer)
     console.log(purchasedPayer)
     return (
         <>
         {
        purchasedPayer.map(selectPlayer => 
-                <SelectCard key={selectPlayer.id} selectPlayer={selectPlayer}></SelectCard>
+                <SelectCard key={selectPlayer.id} selectPlayer={selectPlayer} purchasedPayer={purchasedPayer} removePlayer={removePlayer}></SelectCard>
                  )
         }
 
