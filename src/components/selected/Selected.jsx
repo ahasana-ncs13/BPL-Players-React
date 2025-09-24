@@ -1,13 +1,13 @@
-import React, { use } from 'react';
+import React from 'react';
 import SelectCard from '../select/SelectCard';
 
-const Selected = ({playersPromise}) => {
-    const SelectedpromiseData = use(playersPromise)
-    console.log(SelectedpromiseData)
+const Selected = ({purchasedPayer}) => {
+    // const SelectedpromiseData = use(purchasedPayer)
+    console.log(purchasedPayer)
     return (
         <>
         {
-       SelectedpromiseData.map(selectPlayer => 
+       purchasedPayer.map(selectPlayer => 
                 <SelectCard key={selectPlayer.id} selectPlayer={selectPlayer}></SelectCard>
                  )
         }

@@ -12,7 +12,9 @@ let playersPromise = fetch("./players.json")
 
 function App() {
   let [toggle ,setToggle]= useState(true)
-  let [availableCoin, setAvailableCoin]=useState(60000)
+  let [availableCoin, setAvailableCoin]=useState(600000000)
+  let [purchasedPayer, setPurchedPlayer]=useState([])
+  console.log(purchasedPayer)
   return (
     <>
   <Navbar availableCoin={availableCoin}></Navbar>
@@ -33,9 +35,9 @@ function App() {
    
 {
   toggle === true ? <Suspense fallback={<span className="loading loading-dots loading-md mx-20"></span>}>
-<Players playersPromise={playersPromise} setAvailableCoin={setAvailableCoin} availableCoin={availableCoin} ></Players>
+<Players playersPromise={playersPromise} setAvailableCoin={setAvailableCoin} availableCoin={availableCoin} purchasedPayer={purchasedPayer} setPurchedPlayer={setPurchedPlayer} ></Players>
 </Suspense> : 
-            <Selected  playersPromise={playersPromise}></Selected>
+            <Selected purchasedPayer={purchasedPayer}  playersPromise={playersPromise}></Selected>
 }
     </>
   )

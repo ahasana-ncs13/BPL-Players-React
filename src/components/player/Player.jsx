@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import nameImg from '../../assets/Group.png'
 import flag from '../../assets/report 1.png'
 
-const Player = ({eachPlayer,setAvailableCoin,availableCoin}) => {
+const Player = ({eachPlayer,setAvailableCoin,availableCoin,purchasedPayer,setPurchedPlayer}) => {
     let [select, setSelect]=useState(false)
     // console.log(eachPlayer)
     return (
@@ -35,7 +35,7 @@ const Player = ({eachPlayer,setAvailableCoin,availableCoin}) => {
                 ()=>{setSelect(true)
                     availableCoin <= eachPlayer.price  ? alert('not enough balance'):
                 setAvailableCoin(availableCoin - eachPlayer.price)
-
+                setPurchedPlayer([...purchasedPayer, eachPlayer])
                 }
             } disabled={select} className='btn bg-white'>{select?"Seleted":"Choose Player"}</button>
         </div>
